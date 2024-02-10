@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/javafun
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      generate-ddl: true
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    # flyway:
+   # baselineOnMigrate: true
+
+walletme:
+  app:
+    jwtSecret: =====gsgegegeonjriosusacnoafjwnforngjhnlawneljgnlaaast=====
+    jwtExpirationMs: 86400000
+
+server:
+  port: 8081
+
